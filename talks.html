@@ -7,6 +7,9 @@
   <title>Talks | Myeong Jae Jeon</title>
   <link rel="canonical" href="https://myeongjae-jeon.github.io/talks.html">
   <script src="theme.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&amp;family=Source+Sans+3:wght@400;500;600;650&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,19 +23,54 @@
           <li><a href="talks.html" aria-current="page">Talks</a></li>
           <li><a href="activities.html">Activities</a></li>
           <li><a href="cv.pdf">CV</a></li>
-          <li>
-            <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode" hidden>
-              <span class="theme-moon" aria-hidden="true">☾</span>
-              <span class="theme-sun" aria-hidden="true">☀︎</span>
-            </button>
-          </li>
         </ul>
       </nav>
+      <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode" hidden>
+        <span class="theme-moon" aria-hidden="true">☾</span>
+        <span class="theme-sun" aria-hidden="true">☀︎</span>
+      </button>
     </div>
   </header>
 
   <div class="wrap layout">
-    <main id="content">
+    <aside class="profile" aria-label="Profile and contact">
+      <p class="profile-name">Myeong Jae Jeon</p>
+      <p class="native-name" lang="ko">전명재</p>
+      <p class="profile-role">Ph.D. Candidate in Mathematics<br>University of Maryland, College Park</p>
+
+      <dl class="contact-details">
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:mjjeon@umd.edu">mjjeon@umd.edu</a></dd>
+        </div>
+        <div class="contact-address">
+          <dt>Address</dt>
+          <dd>
+            <address>
+              <a href="https://www-math.umd.edu/">Department of Mathematics</a><br>
+              William E. Kirwan Hall<br>
+              4176 Campus Drive<br>
+              College Park, MD 20742
+            </address>
+          </dd>
+        </div>
+        <div>
+          <dt>Profiles</dt>
+          <dd class="profile-links">
+            <a href="https://orcid.org/0009-0002-7935-8920">ORCID</a>
+            <a href="https://openreview.net/profile?id=%7EMyeong_Jae_Jeon1">OpenReview</a>
+            <a href="https://github.com/MyeongJae-Jeon">GitHub</a>
+            <a href="https://www.linkedin.com/in/myeong-jae-jeon-14aa62318">LinkedIn</a>
+          </dd>
+        </div>
+        <div>
+          <dt>Curriculum vitae</dt>
+          <dd><a href="cv.pdf">CV (PDF)</a></dd>
+        </div>
+      </dl>
+    </aside>
+
+    <main id="content" tabindex="-1">
       <header>
         <h1>Talks</h1>
       </header>
@@ -40,33 +78,21 @@
       <section aria-labelledby="research-talks">
         <h2 id="research-talks">Research talks</h2>
         <ul class="entries">
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">Compactifying families via stacky modifications</h3>
-              <p class="meta"><a href="https://icerm.brown.edu/program/semester_program_workshop/sp-f26-w3">Moduli of K3 Surfaces</a> · ICERM, Providence, RI · Poster</p>
-            </div>
-            <time class="date" datetime="2026-11-10">Nov 10, 2026</time>
+          <li class="entry">
+            <h3 class="entry-title">Compactifying families via stacky modifications</h3>
+            <p class="meta"><a href="https://icerm.brown.edu/program/semester_program_workshop/sp-f26-w3">Moduli of K3 Surfaces</a> · ICERM, Providence, RI · Poster · <time class="date" datetime="2026-11-10">Nov 10, 2026</time></p>
           </li>
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">Compactifying families via stacky modifications</h3>
-              <p class="meta"><a href="https://erdoscenter.renyi.hu/events/simons-school-higher-dimensional-varieties">Simons School on Higher Dimensional Varieties</a> · HUN-REN Rényi Institute, Budapest, Hungary · Lightning talk</p>
-            </div>
-            <time class="date" datetime="2026-10-06">Oct 6, 2026</time>
+          <li class="entry">
+            <h3 class="entry-title">Compactifying families via stacky modifications</h3>
+            <p class="meta"><a href="https://erdoscenter.renyi.hu/events/simons-school-higher-dimensional-varieties">Simons School on Higher Dimensional Varieties</a> · HUN-REN Rényi Institute, Budapest, Hungary · Lightning talk · <time class="date" datetime="2026-10-06">Oct 6, 2026</time></p>
           </li>
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">Compactification of torsors under reductive groups</h3>
-              <p class="meta"><a href="https://sites.krieger.jhu.edu/antd/past-speakers/">JHU–UMD Algebra and Number Theory Day</a> · Johns Hopkins University, Baltimore, MD</p>
-            </div>
-            <time class="date" datetime="2026-05-19">May 19, 2026</time>
+          <li class="entry">
+            <h3 class="entry-title">Compactification of torsors under reductive groups</h3>
+            <p class="meta"><a href="https://sites.krieger.jhu.edu/antd/past-speakers/">JHU–UMD Algebra and Number Theory Day</a> · Johns Hopkins University, Baltimore, MD · <time class="date" datetime="2026-05-19">May 19, 2026</time></p>
           </li>
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">Resolution of indeterminacy of rational maps to proper tame stacks</h3>
-              <p class="meta"><a href="https://sites.google.com/a/wagsymposium.org/current/oregon-fall-2025">Western Algebraic Geometry Symposium</a> · University of Oregon, Eugene, OR · <a href="https://drive.google.com/file/d/1rUpxzT4pu6bOr02IAIRdswBC2aKT-QS8/view?usp=sharing">Poster</a></p>
-            </div>
-            <time class="date" datetime="2025-11-08">Nov 8, 2025</time>
+          <li class="entry">
+            <h3 class="entry-title">Resolution of indeterminacy of rational maps to proper tame stacks</h3>
+            <p class="meta"><a href="https://sites.google.com/a/wagsymposium.org/current/oregon-fall-2025">Western Algebraic Geometry Symposium</a> · University of Oregon, Eugene, OR · <a href="https://drive.google.com/file/d/1rUpxzT4pu6bOr02IAIRdswBC2aKT-QS8/view?usp=sharing">Poster</a> · <time class="date" datetime="2025-11-08">Nov 8, 2025</time></p>
           </li>
         </ul>
       </section>
@@ -74,84 +100,41 @@
       <section aria-labelledby="seminar-talks">
         <h2 id="seminar-talks">Seminar talks</h2>
         <ul class="entries">
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">Log stable curves and their moduli</h3>
-              <p class="meta">RIT on Algebraic Geometry – Log Geometry · University of Maryland, College Park, MD</p>
-            </div>
-            <time class="date" datetime="2025-10">Oct 2025</time>
+          <li class="entry">
+            <h3 class="entry-title">Log stable curves and their moduli</h3>
+            <p class="meta">RIT on Algebraic Geometry – Log Geometry · University of Maryland, College Park, MD · <time class="date" datetime="2025-10">Oct 2025</time></p>
           </li>
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">The local structure of algebraic stacks</h3>
-              <p class="meta">Maryland Informal Moduli Seminar · University of Maryland, College Park, MD</p>
-            </div>
-            <time class="date" datetime="2025-06">Jun 2025</time>
+          <li class="entry">
+            <h3 class="entry-title">The local structure of algebraic stacks</h3>
+            <p class="meta">Maryland Informal Moduli Seminar · University of Maryland, College Park, MD · <time class="date" datetime="2025-06">Jun 2025</time></p>
           </li>
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">Cones in the Néron–Severi space NS(X)ℝ</h3>
-              <p class="meta">RIT on Algebraic Geometry – K3 Surfaces · University of Maryland, College Park, MD</p>
-            </div>
-            <time class="date" datetime="2025-04">Apr 2025</time>
+          <li class="entry">
+            <h3 class="entry-title">Cones in the Néron–Severi space NS(X)ℝ</h3>
+            <p class="meta">RIT on Algebraic Geometry – K3 Surfaces · University of Maryland, College Park, MD · <time class="date" datetime="2025-04">Apr 2025</time></p>
           </li>
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">Hodge Theory and the Kuga–Satake Construction</h3>
-              <p class="meta">RIT on Algebraic Geometry – K3 Surfaces · University of Maryland, College Park, MD</p>
-            </div>
-            <time class="date" datetime="2024-10">Oct 2024</time>
+          <li class="entry">
+            <h3 class="entry-title">Hodge Theory and the Kuga–Satake Construction</h3>
+            <p class="meta">RIT on Algebraic Geometry – K3 Surfaces · University of Maryland, College Park, MD · <time class="date" datetime="2024-10">Oct 2024</time></p>
           </li>
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">Introduction and Examples of K3 Surfaces</h3>
-              <p class="meta">RIT on Algebraic Geometry – K3 Surfaces · University of Maryland, College Park, MD</p>
-            </div>
-            <time class="date" datetime="2024-09">Sep 2024</time>
+          <li class="entry">
+            <h3 class="entry-title">Introduction and Examples of K3 Surfaces</h3>
+            <p class="meta">RIT on Algebraic Geometry – K3 Surfaces · University of Maryland, College Park, MD · <time class="date" datetime="2024-09">Sep 2024</time></p>
           </li>
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">The Keel–Mori Theorem</h3>
-              <p class="meta">Maryland Informal Moduli Seminar · University of Maryland, College Park, MD</p>
-            </div>
-            <time class="date" datetime="2024-07">Jul 2024</time>
+          <li class="entry">
+            <h3 class="entry-title">The Keel–Mori Theorem</h3>
+            <p class="meta">Maryland Informal Moduli Seminar · University of Maryland, College Park, MD · <time class="date" datetime="2024-07">Jul 2024</time></p>
           </li>
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">Geometric and Abstract Variations of Hodge Structure</h3>
-              <p class="meta">RIT on Hodge Theory · University of Maryland, College Park, MD</p>
-            </div>
-            <time class="date" datetime="2024-04">Apr 2024</time>
+          <li class="entry">
+            <h3 class="entry-title">Geometric and Abstract Variations of Hodge Structure</h3>
+            <p class="meta">RIT on Hodge Theory · University of Maryland, College Park, MD · <time class="date" datetime="2024-04">Apr 2024</time></p>
           </li>
-          <li class="entry event">
-            <div>
-              <h3 class="entry-title">Deligne’s Theorem on Mixed Hodge Structures</h3>
-              <p class="meta">RIT on Hodge Theory · University of Maryland, College Park, MD</p>
-            </div>
-            <time class="date" datetime="2023-10">Oct 2023</time>
+          <li class="entry">
+            <h3 class="entry-title">Deligne’s Theorem on Mixed Hodge Structures</h3>
+            <p class="meta">RIT on Hodge Theory · University of Maryland, College Park, MD · <time class="date" datetime="2023-10">Oct 2023</time></p>
           </li>
         </ul>
       </section>
     </main>
-
-    <aside class="profile" aria-label="Profile and contact">
-      <p class="profile-name">Myeong Jae Jeon</p>
-      <p class="native-name" lang="ko">전명재</p>
-      <p>Ph.D. Candidate in Mathematics<br>University of Maryland, College Park</p>
-      <address>
-        <p><a href="mailto:mjjeon@umd.edu">mjjeon@umd.edu</a></p>
-        <p><a href="https://www-math.umd.edu/">Department of Mathematics</a><br>
-          William E. Kirwan Hall<br>
-          4176 Campus Drive<br>
-          College Park, MD 20742</p>
-      </address>
-      <ul class="profile-links">
-        <li><a href="https://orcid.org/0009-0002-7935-8920">ORCID</a></li>
-        <li><a href="https://openreview.net/profile?id=%7EMyeong_Jae_Jeon1">OpenReview</a></li>
-        <li><a href="https://github.com/MyeongJae-Jeon">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/myeong-jae-jeon-14aa62318">LinkedIn</a></li>
-      </ul>
-    </aside>
   </div>
 
   <footer class="site-footer">
