@@ -6,8 +6,22 @@
   --rule: #d5dfe4;
   --wash: #edf3f6;
   --paper: #fcfdfe;
+  --header: #fff;
+  --underline: #8ca7b4;
   --serif: Georgia, "Times New Roman", serif;
   --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --ink: #e8eff4;
+  --muted: #b6c5d0;
+  --accent: #9cd6ed;
+  --rule: #394956;
+  --wash: #202d38;
+  --paper: #141b22;
+  --header: #19222b;
+  --underline: #688da0;
 }
 
 * { box-sizing: border-box; }
@@ -23,7 +37,7 @@ body {
 a {
   color: var(--accent);
   text-underline-offset: 0.19em;
-  text-decoration-color: #8ca7b4;
+  text-decoration-color: var(--underline);
   overflow-wrap: anywhere;
 }
 
@@ -45,7 +59,7 @@ a:hover { text-decoration-color: currentColor; }
   top: .5rem;
   left: .5rem;
   padding: .5rem 1rem;
-  background: white;
+  background: var(--header);
   transform: translateY(-150%);
 }
 
@@ -54,7 +68,7 @@ a:hover { text-decoration-color: currentColor; }
 .site-header {
   border-top: 4px solid var(--accent);
   border-bottom: 1px solid var(--rule);
-  background: #fff;
+  background: var(--header);
 }
 
 .site-header .wrap {
@@ -99,6 +113,31 @@ a:hover { text-decoration-color: currentColor; }
 }
 
 .nav-list a[aria-current="page"] { font-weight: 650; }
+
+.theme-toggle {
+  inline-size: 2.25rem;
+  block-size: 2.25rem;
+  padding: 0;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: var(--header);
+  color: var(--accent);
+  font: 1.2rem/1 var(--sans);
+  cursor: pointer;
+}
+
+.theme-toggle:not([hidden]) {
+  display: inline-grid;
+  place-items: center;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  background: var(--wash);
+}
+
+.theme-toggle[aria-pressed="true"] .theme-moon,
+.theme-toggle[aria-pressed="false"] .theme-sun { display: none; }
 
 .layout {
   display: grid;
@@ -152,15 +191,15 @@ h1, h2, h3 { font-family: var(--serif); }
 h1 {
   margin: 0 0 1rem;
   color: var(--ink);
-  font-size: clamp(2.45rem, 5vw, 3.7rem);
+  font-size: clamp(1.85rem, 3.2vw, 2.6rem);
   font-weight: 500;
-  line-height: 1.06;
-  letter-spacing: -.035em;
+  line-height: 1.16;
+  letter-spacing: -.02em;
 }
 
 h2 {
   margin: 0 0 .8rem;
-  font-size: clamp(1.65rem, 3vw, 2rem);
+  font-size: clamp(1.4rem, 2.4vw, 1.75rem);
   font-weight: 500;
   line-height: 1.2;
 }
